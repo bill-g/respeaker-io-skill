@@ -28,7 +28,6 @@ class RespeakerIo(MycroftSkill):
     def initialize(self):
         LOG.debug("initialising")
 
-        pixel_ring.set_brightness(20)
         pixel_ring.wakeup()
 
         self.add_event('recognizer_loop:record_begin',
